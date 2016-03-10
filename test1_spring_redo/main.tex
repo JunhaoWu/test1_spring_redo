@@ -1,0 +1,120 @@
+\documentclass{article}
+
+\usepackage{pgfplots}
+\usepackage[margin=0.75in, paperwidth=8.5in, paperheight=11in]{geometry}
+\usepackage{setspace}
+\usepackage{fancyvrb} % extended verbatim environments
+\usepackage{framed}%To get shade behind text
+\usepackage{graphicx}
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}%setting shade color
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+\doublespacing
+\textbf{IB Computer Science }                        %%%(class number and section) 
+ \hfill                             %%%(date of test)
+$ {\bf Name:\underline{Junhao Wu} }}$(3 points)
+
+\begin{centering}
+\vspace{1cm}
+\textbf{Spring: Exam 1}\\
+\end{centering}
+\vspace{1cm}
+ 
+
+  
+ 
+ $\bf{1)}$ Write a Java class that prints the following. (10 points)
+  
+   \begin{verbatim}
+ Hola mundo!
+ 
+ public class Hello {
+    public static main void (String[] avgs){
+        System.out.println (“Hola Mundo!”);
+    }
+    }
+
+ \end{verbatim}
+ 
+ 
+ $\bf{2)}$ Write a method named "counter" that takes two integers, A and B, and prints the numbers from A to B. (20 points)
+  \vspace{0.5cm}
+  \begin{verbatim}
+public static void counter (int a, int b){
+    for (int i = 0; i < b-a+1; i++){
+        System.out.println(a+i);}
+
+  \end{verbatim}
+ 
+  $\bf{3)}$ Write some Java code that will fill an array with the numbers from 10 to 100.  (20 points)
+   \vspace{0.5cm}
+   \begin{verbatim}
+int[] Team = new int[91];
+    for (int i = 0; i < 91; i++){
+        Team[i] = i + 10;}
+
+  \end{verbatim}
+   
+  $\bf{4)}$ Write a method named "average" that will return the average value of an integer array. \\
+   It should return a double.  (20 points)
+   \vspace{0.5cm}
+   \begin{verbatim}
+    public static double average (int[] Team){
+	    int sum;
+	    for ( int i = 0; i < Team.length; i++){
+		    sum=sum + Team[i];}
+	    double avg;
+		    avg = ((float)sum)/Team.length;
+        return avg;]
+        
+  \end{verbatim}
+   
+  $\bf{5)}$ Draw the truth table for OR and XOR.  (10 points)
+   \vspace{0.5cm}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{1.jpg}
+\lable[NO.1]
+\label{fig:1}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{2.jpg}
+\lable[NO.2]
+\label{fig:1}
+\end{figure}
+   \begin{verbatim}
+   
+   
+  \end{verbatim}
+   
+  $\bf{6)}$ Write a method for the XOR operator named "xor".  It should take two booleans as arguments and return a boolean.  (20 points)
+   \vspace{0.5cm}
+   \begin{verbatim}
+public static boolean XOR (boolean A, boolean B){
+    if (A == B){
+        return false;}
+    else {
+        return true;}
+    }
+
+  \end{verbatim}
+   
+   $\bf{7)}$ Explain how to compile and run a program "hello.java" from the command line.  (10 points)
+   \begin{verbatim}
+   java c hello.java
+   java hello
+  \end{verbatim}
+  
+
+
+  
+  
+  
+    
+
+ 
+\end{document}
